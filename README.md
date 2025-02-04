@@ -12,6 +12,12 @@ Este proyecto es una simple aplicación web que consume la API de "When Is The N
 - Acceso a Internet para realizar solicitudes a la API.
 - Un servidor web (como Apache o Nginx) para ejecutar el código PHP.
 
+## ⌨️ Tecnologías Utilizadas
+
+- PHP v.8.0
+- PicoCss como Framework de CSS: `https://picocss-com.`
+- API Pública: `https://whenisthenextmcufilm.com/api`
+
 ## 💻 Uso
 
 Al abrir la aplicación en tu navegador, verás la información sobre la próxima película de Marvel, incluyendo:
