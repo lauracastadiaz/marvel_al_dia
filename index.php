@@ -35,47 +35,29 @@ curl_close($ch);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
         rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"/>
+        href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
 </head>
 
-<main>
-    
+<main class="container">
+
     <section>
-        <img src="<?= $data["poster_url"]; ?>" width="200" alt="Poster de <?= $data["title"]; ?>" style="border-radius: 16px">
+        <h1>Próximas Películas y Series del Universo Marvel</h1>
+        <br> <br>
+        <details>
+            <summary role="button" class="secondary"><?= $data["title"] ?></summary>
+            <img src="<?= $data["poster_url"]; ?>" width="200" alt="Poster de <?= $data["title"]; ?>" style="border-radius: 16px">
+            <h2>Se estrena en <?= $data["days_until"]; ?> días</h2>
+            <p><i><?= $data["overview"] ?></i></p>
+            <p>Fecha de estreno: <?= $data["release_date"] ?></p>
+        </details>
+
+        <details>   
+            <summary role="button" class="secondary"><?= $data["following_production"]["title"] ?></summary>
+            <img src="<?= $data["following_production"]["poster_url"] ?>" width="200" alt="Poster de <?= $data["following_production"]["title"]; ?>" style="border-radius: 16px">
+            <h2>Se estrena en <?= $data["following_production"]["days_until"]; ?> días</h2>
+            <p><i><?= $data["following_production"]["overview"] ?></i></p>
+            <p>Fecha de estreno: <?= $data["following_production"]["release_date"] ?></p>
+        </details>
     </section>
 
-    <hgroup>
-        <h2><u><?= $data["title"]?></u></h2>
-        <h2>se estrena en <?= $data["days_until"]; ?> días</h2>
-        <p>Fecha de estreno: <?= $data["release_date"]?></p>
-        <br>
-        <p>La siguiente es: <u><?=$data["following_production"]["title"] ?></u> el <?=$data["following_production"]["release_date"]?> </p>
-    </hgroup>
 </main>
-
-<style>
-
-    body{
-        display: grid;
-        place-content: center;
-        background-color: #6D2323;
-    }
-
-    section{
-        display: flex;
-        justify-content: center;
-        text-align: center;;
-    }
-
-    hgroup{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
-
-    img{
-        margin: 0;
-    }
-
-</style>
