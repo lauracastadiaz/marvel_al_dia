@@ -1,10 +1,10 @@
-# Demo de Prueba: Marvel al día - Próximas Películas de Marvel
+# Demo de Prueba: Marvel al día - Próximas Películas y Series del Universo Marvel
 
-Este es un proyecto de demostración que muestra cómo obtener y mostrar información sobre las próximas películas de Marvel utilizando PHP y la API pública de [When Is The Next MCU Film](https://whenisthenextmcufilm.com/api).
+Este es un proyecto de demostración que muestra cómo obtener y mostrar información sobre las próximas películas y series de Marvel utilizando PHP y la API pública de [When Is The Next MCU Film](https://whenisthenextmcufilm.com/api).
 
 ## 🙈 Descripción
 
-Este proyecto es una simple aplicación web que consume la API de "When Is The Next MCU Film" para obtener detalles sobre la próxima película de Marvel y la que le sigue. La información se muestra en una página web básica con un diseño minimalista.
+Este proyecto es una simple aplicación web que consume la API de "When Is The Next MCU Film" para obtener detalles sobre la próxima película o serie de Marvel y la que le sigue. La información se muestra en una página web básica con un diseño minimalista.
 
 ## ✨ Requisitos
 
@@ -16,7 +16,7 @@ Este proyecto es una simple aplicación web que consume la API de "When Is The N
 
 Al abrir la aplicación en tu navegador, verás la información sobre la próxima película de Marvel, incluyendo:
 
-- Título de la película.
+- Título de la película o serie.
 
 - Fecha de lanzamiento.
 
@@ -26,7 +26,7 @@ Al abrir la aplicación en tu navegador, verás la información sobre la próxim
 
 - Imagen del póster.
 
-- También se mostrará información sobre la película que sigue a la próxima.
+- También se mostrará información sobre la película o serie que sigue a la próxima.
 
 ## ➖ Estructura del Proyecto
 - *index.php*: Archivo principal que realiza la solicitud a la API y muestra la información.
