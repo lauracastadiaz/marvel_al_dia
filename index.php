@@ -44,7 +44,7 @@ curl_close($ch);
         <h1>Próximas Películas y Series del Universo Marvel</h1>
         <br> <br>
         <details>
-            <summary role="button" class="secondary"><?= $data["title"] ?></summary>
+            <summary role="button" class="secondary"><?= $data["title"]?> (<?=$data["type"]?>)</summary>
             <img src="<?= $data["poster_url"]; ?>" width="200" alt="Poster de <?= $data["title"]; ?>" style="border-radius: 16px">
             <h2>Se estrena en <?= $data["days_until"]; ?> días</h2>
             <p><i><?= $data["overview"] ?></i></p>
@@ -52,7 +52,7 @@ curl_close($ch);
         </details>
 
         <details>   
-            <summary role="button" class="secondary"><?= $data["following_production"]["title"] ?></summary>
+            <summary role="button" class="secondary"><?= $data["following_production"]["title"] ?> (<?=$data["following_production"]["type"]?>)</summary>
             <img src="<?= $data["following_production"]["poster_url"] ?>" width="200" alt="Poster de <?= $data["following_production"]["title"]; ?>" style="border-radius: 16px">
             <h2>Se estrena en <?= $data["following_production"]["days_until"]; ?> días</h2>
             <p><i><?= $data["following_production"]["overview"] ?></i></p>
