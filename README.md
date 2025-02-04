@@ -28,7 +28,7 @@ Al abrir la aplicación en tu navegador, verás la información sobre la próxim
 
 - También se mostrará información sobre la película que sigue a la próxima.
 
-## Estructura del Proyecto
+## ➖ Estructura del Proyecto
 - *index.php*: Archivo principal que realiza la solicitud a la API y muestra la información.
 
 - *README.md*: Este archivo, que proporciona información sobre el proyecto.
